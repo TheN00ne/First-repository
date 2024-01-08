@@ -1,5 +1,8 @@
 let message = document.getElementById("message");
 
+let count = 0;
+
 message.addEventListener("click", (e) => {
-    alert(e.target.innerHTML);
+    count += 1;
+    alert(`${e.target.innerHTML} ${count}`);
 });
